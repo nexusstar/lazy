@@ -3,5 +3,4 @@
 -- Add any additional options here
 local opt = vim.opt
 
--- Disable swap files
 opt.swapfile = false
