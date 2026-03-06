@@ -9,3 +9,22 @@ vim.keymap.set("n", "<leader>s", ":w!<CR>", { desc = "Write buffer" })
 -- vim.keymap.set("n", "<leader>gl", function()
 --   gs.blame_line({ full = false })
 -- end, { desc = "Blame Line" })
+--
+--
+-- Codecompanion keymaps
+vim.keymap.set({ "n", "v" }, "<leader>oa", "<cmd>CodeCompanionActions<cr>", {
+  noremap = true,
+  silent = true,
+  desc = "Open CodeCompanion Actions",
+})
+vim.keymap.set({ "n", "v" }, "<leader>oe", "<cmd>CodeCompanionChat Toggle<cr>", {
+  noremap = true,
+  silent = true,
+  desc = "Toggle CodeCompanion Chat",
+})
+vim.keymap.set("v", "ga", "<cmd>CodeCompanionChat Add<cr>", {
+  noremap = true,
+  silent = true,
+  desc = "CodeCompanion Chat Add Selection",
+})
+vim.cmd([[cab cc CodeComapnion]]) -- expand 'cc' into ComodeCompanion in the command

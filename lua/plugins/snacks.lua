@@ -1,18 +1,8 @@
-local footer = function()
-  local info = {}
-  local fortune = require("fortune").get_fortune()
-  info[1] = "  Neovim loaded " .. vim.fn.strftime("%H:%M") .. " on " .. vim.fn.strftime("%d/%m/%Y") .. " '"
-  local footer = vim.list_extend(info, fortune)
-  return footer
-end
-
 local header = [[
-             _
-  /\  /\___ (_)   []___  
- / /_/ / _ \| |  /    /\ 
-/ __  |  __/| | /____/__\
-\/ /_/ \____/ | |[][]||||
-          |__ /           
+                   |"|                    
+     ***          _|_|_          vvv      
+    (o o)         (o o)         (0~0)     
+ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-
         ]]
 
 return {

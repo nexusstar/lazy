@@ -2,5 +2,8 @@
     "diagnostics.disable": [
         "cast-local-type",
         "missing-fields"
+    ],
+    "diagnostics.globals": [
+        "vim"
     ]
 }
